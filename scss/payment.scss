@@ -42,7 +42,7 @@ table {
 }
 *, *::before, *::after { 
     box-sizing: border-box; 
-    outline: 1px solid black;
+    // outline: 1px solid black;
   }
   html{
     font-family: 'Noto Sans TC', sans-serif;
@@ -141,7 +141,7 @@ table {
     justify-content: flex-end;
     position: fixed;
     right: 48px;
-    bottom: 20vh;
+    bottom: 10vh;
     a{
       border-radius: 50%;
       background: #56C4C5;

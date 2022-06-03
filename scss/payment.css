@@ -50,7 +50,6 @@ table {
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 1px solid black;
 }
 
 html {
@@ -185,7 +184,7 @@ sub {
           justify-content: flex-end;
   position: fixed;
   right: 48px;
-  bottom: 20vh;
+  bottom: 10vh;
 }
 
 .btn-top a {

@@ -137,7 +137,7 @@ html{
     justify-content: flex-end;
     position: fixed;
     right: 48px;
-    bottom: 20vh;
+    bottom: 10vh;
     a{
       border-radius: 50%;
       background: #56C4C5;
@@ -361,6 +361,7 @@ html{
     }
   }
   .card-feedback-box{
+    background: #fff;
     margin-top: -24px;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
