@@ -159,7 +159,7 @@ sub {
   width: 50%;
 }
 
-.top .top-content h3 {
+.top .top-content h1 {
   font-size: 48px;
   font-weight: bold;
 }
@@ -240,7 +240,7 @@ sub {
   margin-right: 16px;
 }
 
-.main .program .program-btn a:active {
+.main .program a:hover, .main .program a.active {
   background: #56C4C5;
   color: #fff;
 }
@@ -313,7 +313,7 @@ sub {
   font-size: 12px;
 }
 
-.main .card .card-price p {
+.main .card .card-price p, .main .card .card-price span {
   padding-top: 8px;
   font-size: 32px;
 }
@@ -342,12 +342,22 @@ sub {
   padding-bottom: 0px;
 }
 
-.main .card .card-price .card-price-item1 p {
+.main .card .card-price .card-price-box .charge, .main .card .card-price .card-price-box .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .card .card-price .card-price-box span {
+  padding-left: 8px;
+}
+
+.main .card .card-price .card-price-item1 p, .main .card .card-price .card-price-item1 span {
   color: #56C4C5;
 }
 
 .main .card ul {
-  list-style-image: url("..img/icon_check.svg");
+  list-style-image: url("../img/icon_check.svg");
   text-align: left;
   padding-bottom: 42px;
 }
@@ -386,7 +396,7 @@ sub {
   padding-bottom: 48px;
 }
 
-.main .question-list {
+.main .question li {
   margin-bottom: 16px;
   width: 100%;
   padding: 16px 32px 16px 32px;
@@ -395,12 +405,13 @@ sub {
   border-radius: 12px;
 }
 
-.main .question-list p {
+.main .question li > p {
+  display: none;
   font-size: 16px;
   padding-top: 24px;
 }
 
-.main .question-title {
+.main .faq_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,16 +424,25 @@ sub {
           align-items: center;
 }
 
-.main .question-title .active {
-  color: #56C4C5;
+.main .faq_title button {
+  background: white;
+  border: none;
+}
+
+.main .faq_title button:hover {
+  cursor: pointer;
+}
+
+.main .faq_title p {
+  font-size: 18px;
   font-weight: bold;
 }
 
-.main .question-title h4 {
-  font-size: 18px;
+.main .faq_title p.active {
+  color: #56C4C5;
 }
 
-.main .question-title a {
+.main .faq_title a {
   display: block;
 }
 
@@ -544,7 +564,7 @@ sub {
   .main .question h4 {
     font-size: 16px;
   }
-  .main .question .question-list {
+  .main .question .faq_title {
     padding: 16px;
   }
 }
